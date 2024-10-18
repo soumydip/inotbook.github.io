@@ -8,7 +8,7 @@ const { set } = require("mongoose");
 // Router 1: Get all notes for the logged-in user
 router.get("/fetchusernotes", fetchuser, async (req, res) => {
   try {
-    const notes = await Notes.find({ user: req.user.id });
+    const notes = await Notes.find({ user: req.user.id }); //get data for his particuler id
     res.json(notes);
   } catch (error) {
     console.error("Error fetching notes:", error);

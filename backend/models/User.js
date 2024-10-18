@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 const { Schema } = mongoose;
 
-const UserSchema = new Schema({
+const UserSchema = new Schema({ //Schema for a new user 
   name:{
     type:String,
     required:true

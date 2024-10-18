@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const NoteSchema = new Schema({
+const NoteSchema = new Schema({  //Schema for add a note
   user: {
     type: mongoose.Schema.ObjectId,
     ref: 'user' // Import user models

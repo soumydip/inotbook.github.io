@@ -25,7 +25,6 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/contactUs" element={<ContactUs />} />{" "}
-              {/* Fixed this line */}
             </Routes>
           </div>
         </Router>

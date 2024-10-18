@@ -1,4 +1,5 @@
 import { Link, useNavigate, useLocation } from "react-router-dom";
+//ues navigate is the latest node version after the upade use UesHistory 
 import "./AllCostomCss.css";
 
 function Navber() {
@@ -54,7 +55,7 @@ function Navber() {
                 className={`nav-link ${
                   location.pathname === "/contactUs" ? "active" : ""
                 }`}
-                to="/contactUs" // Updated to match the Route
+                to="/contactUs"
               >
                 Contact Us
               </Link>

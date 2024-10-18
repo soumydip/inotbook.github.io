@@ -51,7 +51,7 @@ router.post(
           id: user.id
         }
       };
-      const authToken = jwt.sign(data, JWT_SECRET);
+      const authToken = jwt.sign(data, JWT_SECRET);  //sign a new auth token 
 
       success = true;
       res.status(201).json({ success, authToken });

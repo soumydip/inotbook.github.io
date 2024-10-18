@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import noteContext from "./Notecontex";
-
 const Notestate = (props) => {
   const host = 'http://localhost:4000'; // Replace with your actual backend URL
   const notesinitial = [];

@@ -124,6 +124,7 @@ function Signup() {
         <button 
           type="submit" 
           className="btn btn-primary" 
+          //button is disble when chakebox,password,email not set his proper Conditions
           disabled={!credentials.agree || credentials.password.length < 5 || !/\S+@\S+\.\S+/.test(credentials.email)}
         >
           Submit

@@ -29,7 +29,7 @@ function ContactUs() {
       email: "",
       description: "",
     };
-
+    //chaking the coorect data for user given
     if (formData.name.length < 5) {
       newErrors.name = "Name must be at least 5 characters long.";
     }

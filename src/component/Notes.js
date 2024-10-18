@@ -17,10 +17,11 @@ const Notes = () => {
 
   useEffect(() => {
     
-    if(localStorage.getItem('token')){
+    if(localStorage.getItem('token')){ //when awt token  fatch in localStorage 
       getNotes();
     }else{
-      navigate("/login"); 
+      navigate("/login"); //if jwt toekn could not save in localStorage redirect to login page and 
+      //do not access the notes
     }
   }, []);
 
